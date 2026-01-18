@@ -14,7 +14,7 @@ import (
 func main() {
 	err := godotenv.Load()
 	if err != nil {
-		log.Fatalf("error loading ENV file")
+		console.log("No env file found") // no file in prod
 	}
 
 	database.DbInit()
