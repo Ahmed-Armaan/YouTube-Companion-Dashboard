@@ -1,0 +1,13 @@
+
+> client@0.0.0 build
+> tsc -b && vite build
+
+src/pages/videoDashboard.tsx(7,1): error TS6133: 'Note' is declared but its value is never read.
+src/pages/videoDashboard.tsx(64,42): error TS2339: Property 'id' does not exist on type 'VideoDetails'.
+src/pages/videoDashboard.tsx(70,10): error TS6133: 'data' is declared but its value is never read.
+src/pages/videoDashboard.tsx(76,13): error TS2339: Property 'id' does not exist on type 'VideoDetails'.
+src/pages/videoDashboard.tsx(136,3): error TS2304: Cannot find name 'setNotes'.
+src/pages/videoDashboard.tsx(136,12): error TS7006: Parameter 'prev' implicitly has an 'any' type.
+src/pages/videoDashboard.tsx(234,51): error TS2339: Property 'id' does not exist on type 'VideoDetails'.
+src/pages/videoDashboard.tsx(325,6): error TS2322: Type 'Comment[]' is not assignable to type 'import("/home/ahmed/lab/misc/cactro_test/YT_dashboard/client/src/types/types").Comment[]'.
+  Type 'Comment' is missing the following properties from type 'Comment': id, author, text, date
