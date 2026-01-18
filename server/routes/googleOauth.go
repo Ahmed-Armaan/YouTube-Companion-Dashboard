@@ -116,7 +116,7 @@ func GetCredentials(c *gin.Context) {
 		MaxAge:   86400,
 	})
 
-	c.Redirect(http.StatusFound, "http://localhost:5173/channels")
+	c.Redirect(http.StatusFound, os.Getenv("FRONTEND_URL")+"/channels")
 }
 
 func getTokens(code string) (*TokenResponse, error) {
